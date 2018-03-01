@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="./pager.css">
+
+<script src="./jquery-3.2.1.js" type="text/javascript"></script>
+<script src="./pager.js" type="text/javascript"></script>
+
+</head>
+<body>
+	<div class="pageStyle">
+	<ul class="pagination" id="page2"></ul>
+	<div class="pageJump">
+		<span>至</span>
+		<input type="text" />
+		<span>页</span>
+		<button type="button" class="button">确认</button>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+	Page({
+      num: 5, //页码数
+      startnum: 1, //指定页码
+      elem: $('.pageStyle #page2'), //指定的元素
+      callback: function(n) { //回调函数
+      
+      }
+    });
+
+
+</script>
+
+</html>
